@@ -23,11 +23,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows 上的 Git 安装与配置指南">
 <meta property="og:url" content="https://micxelo.github.io/posts/git-installation-guide.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="MIĈELO">
 <meta property="og:description" content="一份详尽的指南，帮助你在 Windows 系统上完成 Git 的安装、配置，并连接至 GitHub 进行代码管理。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-27T12:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-06T10:27:59.269Z">
+<meta property="article:modified_time" content="2026-02-06T12:27:56.492Z">
 <meta property="article:author" content="Micxelo">
 <meta property="article:tag" content="Git">
 <meta property="article:tag" content="GitHub">
@@ -38,7 +38,7 @@
   
   
   
-  <title>Windows 上的 Git 安装与配置指南 - Hexo</title>
+  <title>Windows 上的 Git 安装与配置指南 - MIĈELO</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -102,7 +102,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Hexo</strong>
+      <strong>MIĈELO</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -282,21 +282,25 @@
                 
                 <p>本指南旨在提供在 Windows 操作系统上安装和配置 Git 的详细步骤，部分内容可能会因操作系统版本和 Git 版本的不同而有所差异，请根据实际情况进行调整。</p>
 <p>本指南假定读者对命令行和 Unix Utils 有基本了解。</p>
-<h2 id="创建-GitHub-账号"><a href="#创建-GitHub-账号" class="headerlink" title="创建 GitHub 账号"></a>创建 GitHub 账号</h2><blockquote>
-<p>如果你已经有 GitHub 账号，可以跳过此步骤。</p>
-</blockquote>
-<blockquote>
-<p>本指南假定你可以正常访问 GitHub 和相关服务。如果在中国大陆地区访问 GitHub 速度较慢，可以考虑使 用网络加速工具，如 <a target="_blank" rel="noopener" href="https://steampp.net/">Watt Toolkit</a> 提供的 GitHub 的加速服务。请注意，这不是 Git 安装的必要步骤，仅为改善下载和访问体验的建议。本指南不对任何第三方工具的使用负责。</p>
-</blockquote>
+<h2 id="创建-GitHub-账号"><a href="#创建-GitHub-账号" class="headerlink" title="创建 GitHub 账号"></a>创建 GitHub 账号</h2><div class="note note-info">
+            <p>如果你已经有 GitHub 账号，可以跳过此步骤。</p>
+          </div>
+
+<div class="note note-warning">
+            <p>本指南假定你可以正常访问 GitHub 和相关服务。如果在中国大陆地区访问 GitHub 速度较慢，可以考虑使 用网络加速工具，如 <a target="_blank" rel="noopener" href="https://steampp.net/">Watt Toolkit</a> 提供的 GitHub 的加速服务。请注意，这不是 Git 安装的必要步骤，仅为改善下载和访问体验的建议。本指南不对任何第三方工具的使用负责。</p>
+          </div>
+
 <p>访问 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>，点击右上角的“Sign up”（注册）按钮。按照提示填写用户名、邮箱和密码，完成注册流程。</p>
 <h2 id="安装-Git-for-Windows"><a href="#安装-Git-for-Windows" class="headerlink" title="安装 Git for Windows"></a>安装 Git for Windows</h2><p>访问 <a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git 下载页面</a>，点击“Install for Windows”（为 Windows 安装）按钮，在新页面中根据提示下载最新版本的 Git 安装程序。</p>
-<blockquote>
-<p>截至本指南撰写时，最新版本 2.52.0 可在 <a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe">此处</a> 下载。</p>
-</blockquote>
+<div class="note note-info">
+            <p>截至本指南撰写时，最新版本 2.52.0 可在 <a target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe">此处</a> 下载。</p>
+          </div>
+
 <p>运行下载的安装程序，按照提示完成安装，这可能会要求管理员权限。</p>
-<blockquote>
-<p>以下步骤基于 Git 2.52.0 版本，其他版本可能略有不同。</p>
-</blockquote>
+<div class="note note-info">
+            <p>以下步骤基于 Git 2.52.0 版本，其他版本可能略有不同。</p>
+          </div>
+
 <h3 id="Information（信息）"><a href="#Information（信息）" class="headerlink" title="Information（信息）"></a>Information（信息）</h3><p>Git 基于 <a target="_blank" rel="noopener" href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.zh-cn.html">GNU 通用公共许可证第二版</a> 发布。确保你同意该许可证条款后，点击“Next”（下一步）。</p>
 <h3 id="Select-Destination-Location（选择安装位置）"><a href="#Select-Destination-Location（选择安装位置）" class="headerlink" title="Select Destination Location（选择安装位置）"></a>Select Destination Location（选择安装位置）</h3><p>选择 Git 的安装位置，点击“Next”。</p>
 <h3 id="Select-Components（选择组件）"><a href="#Select-Components（选择组件）" class="headerlink" title="Select Components（选择组件）"></a>Select Components（选择组件）</h3><table>
@@ -354,9 +358,10 @@
 <p>建议保持默认选项，点击“Next”。</p>
 <h3 id="Select-Start-Menu-Folder（选择开始菜单文件夹）"><a href="#Select-Start-Menu-Folder（选择开始菜单文件夹）" class="headerlink" title="Select Start Menu Folder（选择开始菜单文件夹）"></a>Select Start Menu Folder（选择开始菜单文件夹）</h3><p>选择开始菜单文件夹，点击“Next”。</p>
 <h3 id="Choosing-the-default-editor-used-by-Git（选择-Git-默认文本编辑器）"><a href="#Choosing-the-default-editor-used-by-Git（选择-Git-默认文本编辑器）" class="headerlink" title="Choosing the default editor used by Git（选择 Git 默认文本编辑器）"></a>Choosing the default editor used by Git（选择 Git 默认文本编辑器）</h3><p>选择你喜欢的文本编辑器作为 Git 的默认编辑器，点击“Next”。</p>
-<blockquote>
-<p>对于初学者，不建议选择 Vim，因为它的使用门槛较高。可以选择 Nano（TUI 编辑器）、Visual Studio Code（如果已安装）或其他熟悉的编辑器。</p>
-</blockquote>
+<div class="note note-warning">
+            <p>对于初学者，不建议选择 Vim，因为它的使用门槛较高。可以选择 Nano（TUI 编辑器）、Visual Studio Code（如果已安装）或其他熟悉的编辑器。</p>
+          </div>
+
 <h3 id="Adjusting-the-name-of-the-initial-branch-in-new-repositories（调整新仓库的初始分支名称）"><a href="#Adjusting-the-name-of-the-initial-branch-in-new-repositories（调整新仓库的初始分支名称）" class="headerlink" title="Adjusting the name of the initial branch in new repositories（调整新仓库的初始分支名称）"></a>Adjusting the name of the initial branch in new repositories（调整新仓库的初始分支名称）</h3><p>在 Git 中，分支（Branch）是指向一系列提交（Commit）的可移动指针，代表了软件开发中的一条独立开发线。你可以创建一个新分支来尝试新功能或修复错误，而不会影响主开发线的稳定性。所有提交都隶属于某个分支，通过切换分支，你可以让工作目录中的文件快速切换到该分支所指向的代码版本。</p>
 <p>在此步骤中，你可以选择新仓库的默认分支名称。传统上，Git 使用“master”作为默认分支名称，但近年来，许多项目和组织已经转向使用“main”作为更具包容性的默认分支名称。</p>
 <ul>
@@ -506,9 +511,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t ed25519 -C <span class="hljs-string">&quot;&lt;your_email@example.com&gt;&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>按提示操作，通常可以直接按回车键接受默认设置。记录下生成的密钥文件路径，通常在 <code>%USERPROFILE%\.ssh\id_ed25519</code> 和 <code>%USERPROFILE%\.ssh\id_ed25519.pub</code>。</p>
-<blockquote>
-<p><code>%USERPROFILE%</code> 是 Windows 系统中的环境变量，表示当前用户的主目录路径，例如 <code>C:\Users\your_username</code>。</p>
-</blockquote>
+<div class="note note-info">
+            <p><code>%USERPROFILE%</code> 是 Windows 系统中的环境变量，表示当前用户的主目录路径，例如 <code>C:\Users\your_username</code>。</p>
+          </div>
 </li>
 <li><p>将公钥添加到 GitHub</p>
 <p>登录 GitHub，点击 Avatar（头像）&gt; “Settings”（设置）&gt; “SSH and GPG keys”（SSH 和 GPG 密钥），点击“New SSH key”（新建 SSH 密钥），为密钥命名（如“My Laptop”），保持“Key Type”默认，将公钥（<code>id_ed25519.pub</code> 文件内容）粘贴到“Key”字段，点击“Add SSH key”（添加 SSH 密钥）。</p>
@@ -519,9 +524,10 @@
 <p>如果看到类似以下的欢迎信息，说明配置成功：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Hi your_username! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure></li>
 </ol>
-<blockquote>
-<p>也可以选择使用 HTTPS 方式连接 GitHub，但每次操作可能需要输入用户名和密码，建议使用 SSH 方式以简化操作流程。</p>
-</blockquote>
+<div class="note note-info">
+            <p>也可以选择使用 HTTPS 方式连接 GitHub，但每次操作可能需要输入用户名和密码，建议使用 SSH 方式以简化操作流程。</p>
+          </div>
+
 <h2 id="仓库管理"><a href="#仓库管理" class="headerlink" title="仓库管理"></a>仓库管理</h2><p>以下内容提供在本地和 GitHub 远程仓库之间进行基本操作的示例。</p>
 <ol>
 <li><p>创建 GitHub 远程仓库</p>
@@ -667,6 +673,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/posts/git-teamwork-guide.html" title="基于 Git 的团队协作指南">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">基于 Git 的团队协作指南</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
